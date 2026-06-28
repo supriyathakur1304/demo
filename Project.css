@@ -1,0 +1,717 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.deals {
+    background-color: rgb(213, 221, 223);
+    padding: 1px;
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coupons {
+    margin-left: 10px;
+}
+.deals-english img{
+    width: 20px;
+    position: absolute;
+    padding-bottom: 20px;
+    margin-top: 8px;
+    margin-left: 5px;
+    
+
+
+}
+.deals-english{
+    font-size: 20px;
+    margin-left: 12px;
+    
+
+    
+    
+    text-align: center;
+    
+    
+}
+.deals-english select{
+    background-color:lightgrey;
+    margin-bottom: 10px;
+    padding-left: 22px ;
+    border: none;
+    outline: none;
+    
+    
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 8px;
+}
+
+.header h1 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart i {
+    font-size: 25px;
+    color: green;
+}
+
+.search {
+    position: relative;
+    margin-left: 40px;
+    margin-top: 8x;
+    font-weight: bold;
+
+
+
+}
+
+.search input {
+
+    height: 30px;
+    border-radius: 5px;
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
+
+    padding: 10px;
+}
+
+.search i {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    color: grey;
+}
+
+.location {
+    position: relative;
+    margin-left: 30px;
+}
+
+.location input {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 12px;
+    padding-left: 32px;
+}
+
+.location i {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    color: grey;
+}
+
+.location input:focus {
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.location input:focus+i {
+    color: black;
+}
+
+.notification {
+    display: flex;
+    gap: 20px;
+    margin-left: 220px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.departments i{
+    position: absolute;
+    top: 140px;
+    color:white;
+    padding:10px 30px;
+    font-size: 25px;
+
+    
+}
+
+.departments p {
+    border: 1px solid green;
+    background-color: green;
+    width: 250px;
+    height: 60px;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 22px;
+    padding-left: 56px;
+    
+    display: flex;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+
+
+}
+
+
+.dropdown a {
+    font-size: 20px;
+    padding-left: 18px;
+    margin-top: 5px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.dropdown i {
+    margin-top: 9px;
+    margin-left: 4px;
+    cursor: pointer;
+    width: 15px;
+    height: 20px;
+}
+
+.dropdown i:hover {
+    color: green;
+}
+
+
+
+.dropdown-content {
+    background-color: lightgray;
+    position: absolute;
+
+    border: none;
+    display: none;
+
+
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+    
+}
+
+.pages:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.banner {
+
+
+    background-image: url(https:media.istockphoto.com/id/1306511017/photo/healthy-food-background-healthy-vegan-vegetarian-food-in-paper-bag-vegetables-and-fruits-on.jpg?s=612x612&w=0&k=20&c=OUh0G1W7DISSbgv52sQVu37V-PpKpC-8FuysUWcgfUY=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 98%;
+    margin: 20px auto;
+    border-radius: 10px;
+
+
+}
+
+.banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+
+
+.order {
+    width: 220px;
+    height: px;
+    background-color: orange;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid orange;
+    box-shadow: 0px 0px 8px 0px grey;
+    padding: 0px 3px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 40px;
+
+
+
+
+
+
+
+}
+
+.banner h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-left: 40px;
+
+
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.banner span {
+    color: green;
+}
+
+.first-time {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 40px;
+
+
+    padding-right: 3px;
+    padding-left: 3px;
+    color: grey;
+    font-weight: bold;
+
+}
+
+.banner button {
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.banner button:hover {
+    background-color: green;
+    transition: 0.5s;
+}
+
+.banner button i {
+    margin-left: 5px;
+}
+
+
+
+.features h2 {
+    margin: 20px 20px;
+    padding: 2px 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.categories-products {
+    width: 250px;
+    height: 250px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 0px;
+
+    padding: 1px 1px;
+    text-align: center;
+}
+
+.categories-products img {
+    width: 180px;
+    height: 180px;
+}
+
+.offer {
+    display: flex;
+
+    margin: 20px;
+}
+
+
+.offer-1 {
+    width: 50%;
+    height: 300px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeIQ9EsavB9G4IWYn5PV5gauD5C42jvAx0EwqGTCmiyA&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 50px 40px;
+
+
+
+
+}
+
+.offer h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+
+
+}
+
+.offer p {
+    color: grey;
+    padding-bottom: 20px;
+
+}
+
+.offer button {
+    padding: 15px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.offer button:hover {
+    color: black;
+    background-color: green;
+}
+
+.offer-2 {
+    margin-left: 10px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlWelCpCBicoeSksDX4trC-gD-HeGUlmzqyw&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 40px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.products h2 {
+    margin: 20px 20px;
+    padding: 2px 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+
+}
+
+.card {
+    border: 1px solid lightgrey;
+    width: 250px;
+    height: 450px;
+    box-shadow: 1px 1px 10px grey;
+    margin: 10px 20px;
+    border-radius: 10px;
+
+}
+
+.sale {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px;
+}
+
+.percentage {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    width: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px;
+}
+
+.image {
+    width: 100%;
+    height: 240px;
+}
+
+.snacks {
+    margin: 10px;
+    color: grey;
+
+}
+
+.sev {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.icons {
+    margin: 10px;
+    gap: 3px;
+    font-size: 15px;
+}
+
+.icons i {
+
+    color: gold
+}
+
+.icons span {
+    color: grey;
+}
+
+.price {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price span {
+    font-weight: bold;
+}
+
+.price s {
+    color: grey;
+    margin-left: 20px;
+}
+
+.price button {
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    padding: 4px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.price button:hover {
+    color: black;
+    background-color: white;
+}
+
+.image2 {
+    margin-top: 75px;
+    width: 240px;
+}
+
+.buy {
+    color: white;
+    background-color: red;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.image3 {
+    margin-top: 25px;
+}
+
+.image4 {
+    padding-left: 18px;
+
+    margin-top: 50px;
+
+
+
+}
+
+.image5 {
+    margin-top: 50px;
+    width: 220px;
+}
+
+.image6 {
+    width: 220px;
+    padding-left: 30px;
+    margin-top: 120px;
+}
+
+.image7 {
+    margin-top: 105px;
+    padding-left: 30px;
+    width: 220px;
+}
+
+.image8 {
+    margin-top: 28px;
+    width: 240px;
+
+}
+
+.image9 {
+    width: 240px;
+    margin-top: 70px;
+
+}
+
+.image10 {
+
+    margin: 40px;
+}
+.image11{
+    width: 220px;
+    
+    padding-left: 15px;
+    margin-top: 60px;
+}
+
+.prefooter {
+    display: flex;
+    margin: 30px 60px;
+    justify-content: space-between;
+    font-size: 13px;
+
+}
+
+.time i {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+
+}
+
+.time h4 {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-bottom: 10px;
+}
+
+.time p {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.footer {
+    background-color: rgb(222, 228, 236);
+    margin: 40px;
+    padding-top: 30px;
+
+
+}
+
+.footer-content {
+
+
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    padding: 10px;
+
+}
+
+
+.dairy {
+    padding-top: 25px;
+}
+
+.dairy p {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.payment-content {
+    margin: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.pay span {
+    padding-top: 12px;
+    font-weight: bold;
+    font-size: 18px;
+
+
+
+}
+
+.pay {
+    display: flex;
+    gap: 10px;
+}
+
+.pay img {
+    width: 50px;
+
+}
+
+.deliveries {
+    display: flex;
+    gap: 10px;
+}
+
+.deliveries span {
+    padding-top: 12px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.deliveries img {
+    width: 200px;
+}
+
+
+.ecommerce {
+    margin: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ecommerce p {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ecommerce span {
+    color: green;
+}
+
+.follow {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 80px;
+}

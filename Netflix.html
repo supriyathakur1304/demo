@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            background-image: url(https://techstory.in/wp-content/uploads/2021/05/1182202-bg-full-netflix-grid-v2.desktop.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 80px;
+
+
+        }
+
+        .header h1 {
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            letter-spacing: 4px;
+            padding: 10px;
+
+        }
+
+        .select {
+            margin: 10px;
+            position: relative;
+
+        }
+
+        .select i {
+            position: absolute;
+            color: white;
+            bottom: 20px;
+            left: 7px;
+
+        }
+
+        .opt {
+            color: white;
+            border: 1px solid black;
+            padding: 8px 30px;
+            border-radius: 4px;
+            border: none;
+            font-weight: bold;
+            background-color: black;
+
+
+
+        }
+
+        .btn {
+            color: white;
+            background-color: red;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-left: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: red;
+
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+
+        }
+
+
+
+
+        .content h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 58px;
+            color: white;
+        }
+
+        .start {
+            padding: 8px 100px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+
+
+
+        }
+
+        .ready {
+            padding: 4px 10px;
+            font-weight: 500;
+            font-size: 18px;
+            color: white;
+        }
+
+        .content input {
+            width: 400px;
+            padding: 15px 10px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid lightgray;
+
+
+
+        }
+
+        .get {
+            color: white;
+            background-color: red;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .get i {
+            margin-left: 8px;
+            font-size: 18px;
+        }
+
+        .get:hover {
+            background-color: black;
+            color: red;
+        }
+
+        .trending {
+            padding-bottom: 40px;
+        }
+
+        .trending h3 {
+            color: white;
+            font-size: 30px;
+            margin: 50px 90px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .movies {
+
+            margin-left: 100px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 100px;
+            align-items: center;
+
+
+        }
+
+        .movies-card {
+            position: relative;
+        }
+
+        .image1 {
+            width: 300px;
+            height: 350px;
+            border-radius: 10px;
+            padding-right: 30px;
+
+        }
+
+        .movies span {
+            color: white;
+            position: absolute;
+            font-size: 120px;
+            left: -20px;
+            bottom: 20px;
+
+        }
+
+        .movies button {
+            padding: 60px 7px;
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+            background-color: transparent;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+            cursor: pointer;
+
+        }
+
+        .movies button:hover {
+            color: black;
+            background-color: white;
+        }
+
+
+
+        .reasons h3 {
+            color: white;
+            margin: 30px 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+
+
+
+        }
+
+        .watch {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 100px;
+            margin-right: 100px;
+            align-items: center;
+
+
+        }
+
+        .watch-card {
+            padding: 20px 10px;
+            color: white;
+            background-color: rgb(44, 19, 46);
+            width: 250px;
+            height: 270px;
+            border-radius: 20px;
+            padding-right: 20px;
+            line-height: 30px;
+            position: relative;
+
+
+
+
+        }
+
+        .watch-card i {
+            position: absolute;
+            bottom: 12px;
+            right: 20px;
+            font-size: 50px;
+            color: rgb(187, 41, 138);
+
+        }
+
+
+
+        .watch-card h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding-bottom: 5px;
+            font-size: 18px;
+            font-weight: bold;
+
+
+
+        }
+
+
+        .faq {
+            color: white;
+            margin: 50px 90px;
+            margin-top: 70px;
+
+
+
+        }
+
+        .faq h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 30px;
+            font-size: 20px;
+        }
+
+        .faq-1 {
+            background-color: grey;
+            padding: 20px 18px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .faq-1 i {
+            cursor: pointer;
+        }
+
+        .faq-1 i:hover {
+            color: black;
+        }
+
+        .question {
+            color: white;
+            margin: 10px 90px;
+
+            text-align: center;
+            height: 100px;
+        }
+
+        .queston p {
+            font-size: 20px;
+
+        }
+
+        .question input {
+
+            width: 500px;
+            padding: 15px 8px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 8px;
+            outline: none;
+            border: 1px solid lightgray;
+
+        }
+
+        .question button {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 15px 25px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .question button:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .footer {
+            color: white;
+            margin: 80px 90px;
+
+        }
+
+        .footer-section {
+            margin-top: 20px;
+            display: flex;
+            gap: 2px;
+
+
+        }
+
+        .footer-section-1 {
+            padding: 20px 10px;
+            width: 500px;
+            height: 200px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+
+
+
+
+        }
+
+        .footer-section a {
+            padding-bottom: 25px;
+            color: white;
+
+        }
+
+        .footer-select {
+            margin-left: 90px;
+            position: relative;
+            border: 1px solid lightgray;
+            outline: none;
+            border-radius: 4px;
+            border: none;
+
+
+        }
+
+        .footer-select i {
+            position: absolute;
+            color: white;
+            bottom: 10px;
+            left: 7px;
+
+
+
+        }
+
+        .lang {
+            color: white;
+            border: 1px solid lightgray;
+            padding: 8px 30px;
+            outline: none;
+            font-weight: bold;
+            background-color: black;
+            border-radius: 4px;
+
+
+        }
+
+        .india {
+            color: white;
+            margin: 80px 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>NETFLIX</h1>
+            <div class="select">
+                <i class="fa-solid fa-language"></i>
+                <select class="opt">
+                    <option>English</option>
+                    <option>Hindi</option>
+
+                </select>
+                <button class="btn">Sign In</button>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="content">
+                <h1>Unlimited movies,</h1>
+                <h1>TV shows and more</h1>
+                <p class="start">Start at Rs149. Cancel at any time.</p>
+                <p class="ready">Ready to watch? Enter your email to create or restart your memership.</p>
+                <input type="email" placeholder="Email address">
+                <button class="get">Get Started <i>></i></button>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="trending">
+        <h3>Trending Now</h3>
+        <div class="movies">
+            <div class="movies-card">
+                <img class="image1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe_E7WiEM1jcayYhWuAuaYrwNMkFcpIOWgRkTTknT6bQ&s"
+                    alt="img1">
+                <span>1</span>
+            </div>
+            <div class="movies-card">
+                <img class="image1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHB-15JS9Gieu2AnljgtosWG-F0dQHk9UtUmzyF3QrQ&s"
+                    alt="img2">
+                <span>2</span>
+            </div>
+            <div class="movies-card">
+                <img class="image1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnfQYSpEFU2tv-qVsXibOuLEjxsW9ulgQjg&s"
+                    alt="img3">
+                <span>3</span>
+
+            </div>
+            <div class="movies-card">
+                <img class="image1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStrxAl9sg8g9G2wsoGjatZ9e_X7Qr1ASlZBQ&s"
+                    alt="img4">
+                <span>4</span>
+            </div>
+            <div class="movies-card">
+                <img class="image1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE877nXEavE5n3gilKj49FVmBgGzi0062gNcdCSnSsZw&s"
+                    alt="img5">
+                <span>5</span>
+            </div>
+
+            <button>></button>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="reasons">
+        <h3>More reasons to join</h3>
+        <div class="watch">
+            <div class="watch-card">
+                <h5>Enjoy on your TV</h5>
+                <p>Watch on smart TVs,</p>
+                <p>PlayStation, Xbox, Chromecast,</p>
+                <p>Apple TV, Blu-ray players and</p>
+                <p>more.</p>
+                <i class="fa-solid fa-tv"></i>
+
+            </div>
+            <div class="watch-card">
+                <h5>Download your</h5>
+                <h5>shows to watch</h5>
+                <h5>offline</h5>
+                <p>Save your favourite easily and</p>
+                <p>always have something to</p>
+                <p>watch.</p>
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </div>
+            <div class="watch-card">
+                <h5>Watch everywhere</h5>
+                <p>Stream unlimited movies and</p>
+                <p>TV shows on your phone,</p>
+                <p>tablet, laptop and TV.</p>
+                <i class="fa-solid fa-burst"></i>
+
+            </div>
+            <div class="watch-card">
+                <h5>Create profile for kids</h5>
+                <p>Send kids on adventires with</p>
+                <p> their favourite characters in a</p>
+                <p> space made just for them-</p>
+                <p>free with your memership.</p>
+                <i class="fa-solid fa-face-smile"></i>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="faq">
+        <h4>Frequently Asked Question</h4>
+        <div class="faq-1">
+            <p>What is Netflix?</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-1">
+            <p>How much does Netflix cost?</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-1">
+            <p>Where can I watch?</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-1">
+            <p>How do I cancel?</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-1">
+            <p> What can I watch on Netflix</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-1">
+            <p> Is Netflix good for kids?</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+
+    </div>
+
+
+    <div class="question">
+        <p>Ready to watch? Enter your email to create or restart you membersip.</p>
+        <input type="email" placeholder="Email address">
+
+        <button> Get Started <i class="fa-solid fa-angle-right"></i></button>
+
+
+    </div>
+
+    <footer class="footer">
+        <p>Questions? Call 000-800-919-1243</p>
+        <div class="footer-section">
+            <div class="footer-section-1">
+                <a href="">FAQ</a>
+                <a href="">Investors Relations</a>
+                <a href="">Privacy</a>
+                <a href="">Speed Test</a>
+            </div>
+
+
+            <div class="footer-section-1">
+                <a href="">Help Centre</a>
+                <a href="">Jobs</a>
+                <a href="">Cookie Preferences</a>
+                <a href="">Legal Notices</a>
+            </div>
+            <div class="footer-section-1">
+                <a href="">Account</a>
+                <a href=""> Ways to Watch</a>
+                <a href="">Corporate Information</a>
+                <a href="">Only on Netflix</a>
+            </div>
+            <div class="footer-section-1">
+                <a href="">Media Centre</a>
+                <a href="">Terms of Use</a>
+                <a href="">Contact Us</a>
+
+            </div>
+    </footer>
+    <div class="footer-select">
+        <i class="fa-solid fa-language"></i>
+        <select class="lang">
+            <option>English</option>
+            <option>Hindi</option>
+        </select>
+
+
+    </div>
+    <div class="india">
+        <p>Netflix India</p>
+    </div>
+
+
+
+</body>
+
+</html>
